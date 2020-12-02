@@ -79,7 +79,7 @@ async def newWord(ctx):
     n=new_word()
     '''message = '''
     await ctx.send("Word : "+n)
-   # await client.add_reaction(message,':up1:749268799898779789')
+   # await client.add_reaction(message,':up1:emo_id')
 
 @client.command(aliases=["mean","m"])
 async def meaning(ctx):
@@ -110,8 +110,8 @@ async def remaining(ctx):
 async def on_reaction_add(reaction,user):
     global rem_wd
 
-    if reaction.emoji.id == 749258509769769000:
+    if reaction.emoji.id == Emoji_React:
         rem_wd.add(reaction.message.content[7:])
    
 
-client.run("NzQ5MjA2NDc4MDMxOTQ1ODUw.X0om5w.IEcYiagzS98cri7eeWx4loG7BeI")
+client.run("Server Token")
